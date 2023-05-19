@@ -19,6 +19,9 @@ export const Flex = styled("div", {
   display: "flex",
   gap: "$1",
   alignItems: "center",
+  "@mobile": {
+    justifyContent:"flex-end",
+  },
 });
 
 export const Box = styled("div", {
@@ -71,7 +74,7 @@ export const globalStyles = globalCss({
   "*": {
     margin: 0,
     padding: 0,
-    fontFamily: "'Inter', sans-serif",
+    fontFamily: "Roboto",
     boxSizing: "border-box",
   },
   html: {
@@ -115,8 +118,8 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       sectionMobile: "4rem",
     },
     fonts: {
-      titles: '"IBM Plex Sans", sans-serif;',
-      texts: '"Inter", sans-serif',
+      titles: '"Roboto", sans-serif;',
+      texts: '"Roboto", sans-serif',
     },
     fontSizes: {
       title1: "2.75rem",

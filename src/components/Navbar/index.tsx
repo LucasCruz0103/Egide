@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useMedia from "use-media";
 import { userData } from "@/utils/userData";
+import logos from "../../assets/logos.png"
 
 import {
   Navbar as NavbarWrapper,
@@ -8,6 +9,7 @@ import {
   LogoTipoText,
   NavbarLinks,
   NavbarMobileArea,
+  Imagem,
 } from "./style";
 
 import { FaBars } from "react-icons/fa";
@@ -37,7 +39,7 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText>{userData.nameUser}</LogoTipoText>
+            <LogoTipoText><Imagem src={logos} alt="" /></LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
@@ -61,16 +63,16 @@ export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
       <Button type="btLink" as="a" color="grey4" href={`#home`}>
-        Home
+        Início
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#projects`}>
-        Projects
+        Serviços
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#contact`}>
-        Contact
+        Contato
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
-        Social Media
+      Midia Social
       </Button>
     </NavbarLinks>
   );

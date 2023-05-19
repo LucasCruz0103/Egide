@@ -16,7 +16,7 @@ export const Text = styled("p", {
     variants: {
         type: {
             heading1: {
-                fontSize: "$title1",
+                fontSize: "3rem",
                 lineHeight: "$title1",
                 fontWeight: 700,
                 ...headingsDefaultConfig,

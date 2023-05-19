@@ -5,6 +5,7 @@ import { UserImage } from "@/pages/home/style";
 import { userData } from "@/utils/userData";
 import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
+import icon from "../../assets/icon.png"
 // import { HandEffect } from "../HandEffect";
 
 export const Footer = (): JSX.Element => {
@@ -13,7 +14,7 @@ export const Footer = (): JSX.Element => {
       <Container>
         <Flex>
           <UserImage
-            src={`https://github.com/${userData.githubUser}.png`}
+            src={icon}
             alt={userData.nameUser}
             title={userData.nameUser}
             width={"70px"}
@@ -21,10 +22,10 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you! {/* <HandEffect /> */}
+              Obrigado! {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk
+            Me siga nas minhas redes sociais e vamos conversar
             </Text>
           </Box>
         </Flex>
@@ -43,24 +44,6 @@ export const Footer = (): JSX.Element => {
             href={`https://instagram.com/${userData.instagramUser}`}
           >
             <FaInstagram />
-          </Button>
-          <Button
-            className="facebook"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://fb.com/${userData.facebookUser}`}
-          >
-            <FaFacebookF />
-          </Button>
-          <Button
-            className="linkedin"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://linkedin.com/in/${userData.linkedinUser}`}
-          >
-            <FaLinkedinIn />
           </Button>
         </Flex>
       </Container>

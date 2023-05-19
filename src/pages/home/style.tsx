@@ -4,21 +4,19 @@ import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
 
 import meIlustration from "@/public/static/img/background/me-ilustration.svg";
-import backgroundImg from "@/public/static/img/background/header-bg.svg";
+import background from "../../assets/background.jpg";
 
-import dots from "@/public/static/img/background/dots.svg";
+import corretora from "@/public/static/img/background/corretora.svg";
 
 export const Header = styled("header", {
-  backgroundColor: "$grey1",
-  padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${backgroundImg})`,
+  backgroundColor: "#1e3144",
+  padding: "10rem 0 8rem 0",
+  backgroundImage: `url(${corretora})`,
+  backgroundSize:"32%",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
   borderBottom: "2px solid $grey5",
-  "@tablet": {
-    backgroundPosition: "right -10% center",
-  },
   "@mobile": {
     padding: "9rem 0 6rem 0",
     backgroundImage: `none`,
@@ -67,9 +65,11 @@ export const HeaderButtonsArea = styled(Flex, {
 
 export const UserImage = styled("img", {
   borderRadius: "50%",
+  height: "13rem",
+  width: "13rem",
   "@mobile": {
-    width: "2.25rem",
-    height: "2.25rem",
+    width: "17.25rem",
+    height: "14.25rem",
   },
 });
 
@@ -102,13 +102,9 @@ export const StackCards = styled("div", {
 });
 
 export const ProjectsArea = styled("section", {
-  padding: "$section 0",
-  backgroundColor: "$grey0",
-  backgroundImage: `url(${dots})`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "left top 11rem",
+  padding: "1rem",
+  backgroundColor: " rgb(30, 49, 60)",
   "@tablet": {
-    backgroundPosition: "right top 8rem",
     padding: "$sectionMobile 0",
   },
 });
@@ -117,12 +113,12 @@ export const ProjectsAreaSocialMediaMessage = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "2rem",
+  marginTop:"3rem",
 
   "@mobile": {
     width: "100%",
     position: "static",
     order: "2",
-    marginTop: "5rem",
   },
 });
 

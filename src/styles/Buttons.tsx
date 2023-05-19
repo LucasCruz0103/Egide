@@ -18,6 +18,8 @@ export const Button = styled("button", {
   alignItems: "center",
   width: "max-content",
   whiteSpace: "nowrap",
+  texttransform:"uppercase",
+
 
   variants: {
     type: {
@@ -27,7 +29,7 @@ export const Button = styled("button", {
         fontWeight: "500",
       },
       primary: {
-        background: "$brand1",
+        background: "white",
         borderColor: "$brand1",
         color: "$whiteFixed",
         "&:hover": {
@@ -85,20 +87,20 @@ export const Button = styled("button", {
 
         "@mobile": {
           position: "absolute",
-          right: "5rem",
+          right: "1rem",
           top: "0.375rem",
         },
       },
 
       icon: {
-        borderColor: "$grey1",
-        backgroundColor: "$grey1",
+        borderColor: "white",
+        backgroundColor: "#1e3144",
         paddingInline: "1rem",
         "& svg": {
           fill: "$grey2",
         },
         "&:hover": {
-          backgroundColor: "$grey1",
+          backgroundColor: "#1e3144",
         },
       },
       circle: {
