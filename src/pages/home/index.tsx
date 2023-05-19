@@ -5,7 +5,6 @@ import { Button } from "@/styles/Buttons";
 
 // Components
 import { Stack } from "@/components/Stack";
-import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
 // Data
@@ -29,8 +28,6 @@ import {
 import Card from "react-bootstrap/Card";
 
 export const Home = (): JSX.Element => {
-  const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
 
   return (
     <main id="home">
@@ -50,7 +47,12 @@ export const Home = (): JSX.Element => {
               <Button as="a" type="outline" href="#projects">
                 Ler mais
               </Button>
-              <Button as="a" type="brand1" href={portfolioUrl}>
+              <Button 
+                as="a"
+                css={{ "&:hover": { color: "black" } }}
+                type="primary"
+                target="_blank"
+                href="#contact">
                 Entre em contato com um corretor
               </Button>
             </HeaderButtonsArea>
