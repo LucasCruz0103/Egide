@@ -1,5 +1,5 @@
 // Styles
-import { Container, Flex } from "@/styles/Global";
+import { Container, Flex ,CardHeader, } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
 
@@ -12,6 +12,11 @@ import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 import { FaGithub } from "react-icons/fa";
+import Seguro from "../../assets/Seguro.png"
+import Plano from "../../assets/plano.png"
+import Financiamento from "../../assets/Financiamento.png"
+import Consorcio from "../../assets/Consorcio.png"
+import CGI from "../../assets/CGI.png"
 
 // Page Style
 import {
@@ -24,8 +29,10 @@ import {
   ProjectsAreaSocialMediaMessage,
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
+  Imagem,
 } from "./style";
-import Card from "react-bootstrap/Card";
+import Carousel from 'react-bootstrap/Carousel';
+
 
 export const Home = (): JSX.Element => {
 
@@ -62,55 +69,55 @@ export const Home = (): JSX.Element => {
       <ProjectsArea id="projects">
         <Container>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
-                Meus Serviços
+              <Text as="h1" type="heading5" color="grey4">
+                Serviços
               </Text>
             </ProjectsAreaSocialMediaMessage>
-            <hr />
-            <Card>
-              <Card.Body >
-                <Card.Title color="blue">Seguros</Card.Title>
-                <Card.Text>
-                O principal objetivo é o de prevenir que ocorram acidentes, orientando o segurado sobre as medidas de proteção a serem adotadas.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <hr />
-            <Card>
-              <Card.Body>
-                <Card.Title>Planos de Saúde</Card.Title>
-                <Card.Text>
-                viabiliza que o colaborador tenha uma assistência médica privada, com a disponibilidade de exames, consultas médicas e, até mesmo, internações.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <hr />
-            <Card>
-              <Card.Body>
-                <Card.Title>Financiamento de veículos</Card.Title>
-                <Card.Text>
-                tem o papel fundamental de esclarecer todas as informações como valores do seguro com relação ao perfil do condutor, coberturas e outros apontamentos.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <hr />
-            <Card>
-              <Card.Body>
-                <Card.Title>Consórcio</Card.Title>
-                <Card.Text>
-                são responsáveis por comercializar os consórcios aos clientes. Além disso atuam como elo de ligação entre o cliente e a administradora.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <hr />
-            <Card>
-              <Card.Body>
-                <Card.Title>CGI</Card.Title>
-                <Card.Text>
-                é uma modalidade de empréstimo mais barata, justamente pela garantia que o tomador dá.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <Carousel>
+      <Carousel.Item>
+        <Imagem
+          src={Seguro}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Imagem
+          src={Plano}
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Imagem
+          src={Financiamento}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Imagem
+          src={Consorcio}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Imagem
+          src={CGI}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
         </Container>
       </ProjectsArea>
       <Contacts />

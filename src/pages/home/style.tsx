@@ -109,6 +109,7 @@ export const ProjectsArea = styled("section", {
   },
 });
 
+
 export const ProjectsAreaSocialMediaMessage = styled("div", {
   display: "flex",
   flexDirection: "column",
@@ -131,6 +132,7 @@ export const ProjectsAreaContent = styled("div", {
     gridTemplateColumns: "1fr",
     overflow: "hidden",
   },
+  
 });
 
 export const ProjectAreaWrapperColumns = styled("div", {
@@ -140,3 +142,19 @@ export const ProjectAreaWrapperColumns = styled("div", {
     flexDirection: "column",
   },
 });
+
+export const Imagem = styled("img",{
+  width: "63%",
+  height: "19rem",
+  display: "block",
+  margin: "0px auto",
+  "@tablet":{
+    width: "68%",
+  },
+  "@mobileLittle":{
+    width:"100%",
+    height:"12rem"
+  }
+ 
+})
+

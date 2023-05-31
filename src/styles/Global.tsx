@@ -27,6 +27,10 @@ export const Flex = styled("div", {
 export const Box = styled("div", {
   maxWidth: "100%",
 });
+export const CardHeader = styled("div", {
+  blackground:"blue",
+});
+
 
 export const colors = {
   color: {
@@ -115,7 +119,7 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       4: "3rem",
       5: "4rem",
       section: "10rem",
-      sectionMobile: "4rem",
+      sectionMobile: "2rem",
     },
     fonts: {
       titles: '"Roboto", sans-serif;',
