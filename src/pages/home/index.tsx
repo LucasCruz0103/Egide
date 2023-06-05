@@ -9,7 +9,7 @@ import { Contacts } from "@/components/Contacts";
 // Data
 
 import Seguro from "../../assets/Seguro.png"
-import Plano from "../../assets/plano.png"
+import Plano from "../../assets/Plano.png"
 import Financiamento from "../../assets/Financiamento.png"
 import Consorcio from "../../assets/Consorcio.png"
 import CGI from "../../assets/CGI.png"
