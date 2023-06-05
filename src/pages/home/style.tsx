@@ -12,7 +12,6 @@ export const Header = styled("header", {
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
-  borderBottom: "2px solid $grey5",
   "@mobile": {
     padding: "9rem 0 6rem 0",
     backgroundImage: `none`,
