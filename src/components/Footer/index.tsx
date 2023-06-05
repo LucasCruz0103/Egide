@@ -23,7 +23,7 @@ export const Footer = (): JSX.Element => {
               Obrigado! 
             </Text>
             <Text type="body1" color="grey2">
-            Me siga nas minhas redes sociais e vamos conversar
+              Nos siga nas redes sociais para acompanhar nossos produtos e novidades!
             </Text>
           </Box>
         </Flex>

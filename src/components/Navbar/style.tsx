@@ -9,7 +9,7 @@ export const Navbar = styled("nav", {
   bottom: "auto",
   padding: "1rem 0",
   width: "100%",
-  height:"6rem",
+  height:"8rem",
   zIndex: "99999",
 
   [`& ${Container}`]: {
@@ -38,8 +38,8 @@ export const LogoTipoText = styled("span", {
 });
 
 export const Imagem = styled ("img", {
-  height: "4rem",
-  width: "10rem",
+  height: "6rem",
+  width: "14rem",
   margin:"0 4px",
   background: "#1e3144",
 });
@@ -64,4 +64,5 @@ export const NavbarLinks = styled(Flex, {
 export const NavbarMobileArea = styled("div", {
   display: "flex",
   justifyContent: "space-between",
+  alignItems:"baseline"
 });

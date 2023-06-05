@@ -30,7 +30,7 @@ export const Contacts = () => {
           <motion.div style={{ scale }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Vamos conersar e {" "}
+                Vamos conversar e {" "}
                 <Text as="span" type="heading2" color="brand1">
                   desenvolver soluções para você ou sua empresa
                 </Text>
@@ -48,10 +48,9 @@ export const Contacts = () => {
                   Meu Whatsapp
                 </Text>
                 <Text color="grey2" type="body2">
-                Estou disponível para conersar, vamos falar sobre meus serviços
-                  juntos?
+                Entre em contato e obtenha consultoria sem compromisso
                 </Text>
-                <Text
+                <Text 
                   as="a"
                   color="grey2"
                   type="body2"
@@ -72,7 +71,9 @@ export const Contacts = () => {
                   Meu email
                 </Text>
                 <Text color="grey2" type="body2">
-                Envie-me um e-mail caso tenha interesse
+                Entre em contato e obtenha consultoria sem compromisso
+
+
                 </Text>
 
                 <Text
