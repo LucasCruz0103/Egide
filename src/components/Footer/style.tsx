@@ -1,6 +1,5 @@
 import { styled } from "@/styles/stitches.config";
 import { Container, Flex } from "@/styles/Global";
-import dots from "@/public/static/img/background/dots.svg";
 
 export const Footer = styled("footer", {
   backgroundColor: "rgb(13, 23, 33)",
@@ -26,5 +25,15 @@ export const Footer = styled("footer", {
         },
       },
     },
+  },
+});
+
+export const UserImage = styled("img", {
+  borderRadius: "50%",
+  height: "13rem",
+  width: "13rem",
+  "@mobile": {
+    width: "17.25rem",
+    height: "17.25rem",
   },
 });

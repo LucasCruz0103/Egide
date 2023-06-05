@@ -1,17 +1,13 @@
 // Styles
-import { Container, Flex ,CardHeader, } from "@/styles/Global";
+import { Container } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
 
 // Components
-import { Stack } from "@/components/Stack";
 import { Contacts } from "@/components/Contacts";
 
 // Data
-import { stackData } from "@/utils/stackData";
-import { userData } from "@/utils/userData";
 
-import { FaGithub } from "react-icons/fa";
 import Seguro from "../../assets/Seguro.png"
 import Plano from "../../assets/plano.png"
 import Financiamento from "../../assets/Financiamento.png"
@@ -23,12 +19,8 @@ import {
   Header,
   HeaderContent,
   HeaderButtonsArea,
-  UserImage,
-  StackCards,
   ProjectsArea,
   ProjectsAreaSocialMediaMessage,
-  ProjectAreaWrapperColumns,
-  ProjectsAreaContent,
   Imagem,
 } from "./style";
 import Carousel from 'react-bootstrap/Carousel';
@@ -58,7 +50,6 @@ export const Home = (): JSX.Element => {
                 as="a"
                 css={{ "&:hover": { color: "black" } }}
                 type="primary"
-                target="_blank"
                 href="#contact">
                 Entre em contato com um corretor
               </Button>

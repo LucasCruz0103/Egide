@@ -1,6 +1,5 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex, Container } from "@/styles/Global";
-import { Button } from "@/styles/Buttons";
 
 export const Navbar = styled("nav", {
   background: "#1e3144",
@@ -48,12 +47,12 @@ export const Imagem = styled ("img", {
 
 export const NavbarLinks = styled(Flex, {
   "@mobile": {
-    marginTop: "$3",
+    marginTop:"0.99rem",
     flexDirection: "column",
     alignItems: "center",
-    background:"black",
-    opacity:"0.8",
-    width:"10rem",
+    background:"#1e3144",
+    width:"100%",
+    padding: "0 0",
     "& a": {
       width: "100%",
       justifyContent: "flex-start",
