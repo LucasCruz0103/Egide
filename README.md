@@ -1,7 +1,7 @@
   
   
 
-💻 Portfólio
+<!-- 💻 Portfólio
 ============
 
 Projeto desenvolvido para os alunos da Kenzie Academy Brasil, com a finalidade de fornecer um portfólio profissional demonstrando de forma objetiva suas capacidades de técnicas e resolução de problemas, por meio de uma interface simples, moderna e intuitiva.
@@ -51,4 +51,4 @@ Segue as informações sobre cada um:
             
         *   **linkedinUser:** _Inserindo o usuário do seu linkedin será gerado um link para que os usuários acessem seu LinkedIn_
             
-        *   **whatsappNumber:** _Nessa propriedade você precisará inserir seu DDD junto com o seu número do whatsapp, assim quem clicar no link "whatsapp" irá ser enviado para o seu contato já com uma mensagem pré-definida_
+        *   **whatsappNumber:** _Nessa propriedade você precisará inserir seu DDD junto com o seu número do whatsapp, assim quem clicar no link "whatsapp" irá ser enviado para o seu contato já com uma mensagem pré-definida_ -->

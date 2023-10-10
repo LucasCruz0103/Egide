@@ -100,14 +100,6 @@ export const Home = (): JSX.Element => {
         <Carousel.Caption>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <Imagem
-          src={CGI}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-        </Carousel.Caption>
-      </Carousel.Item>
     </Carousel>
         </Container>
       </ProjectsArea>
